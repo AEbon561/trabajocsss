@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    border: 3px solid yellow;
+    display: block;
+    margin: 20px auto;
+}
+.unidadpx{
+    height: 200px;
+    width: 200px;
+}
+.unidadcm{
+    height: 20cm;
+    width: 20cm;
+}

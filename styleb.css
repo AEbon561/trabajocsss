@@ -1,0 +1,107 @@
+*¨{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+div{
+    width: 100px;
+    height: 100px;
+   display: inline-block;
+   background: rgb(160, 2, 203) ;
+   margin: 10px;
+   color: white;
+   padding: 50px;
+}
+#caja1{
+    border-width: thin;
+    border-style: dotted;
+    border-color: bisque red;
+}
+.caja2{
+    border-width: medium;
+    border-style: dotted;
+    border-color: bisque blue green;
+}
+#caja3{
+    border-width: thick;
+    border-style: dotted;
+    border-color: bisque red yellow green;
+}
+.caja4{
+    border: thin dotted beige; 
+}
+#caja5{
+    border: 10px hidden black; 
+}
+.caja6{
+    border: 10px dotted black; 
+}
+#caja7{
+    border: 10px dashed black; 
+}
+#caja8{
+    border: 10px solid black; 
+}
+#caja9{
+    border: 10px double black; 
+}
+#caja10{
+    border: 10px groove black; 
+}
+#caja11{
+    border: 10px ridge black; 
+}
+#caja12{
+    border: 10px inset black; 
+}
+#caja13{
+    border: 10px outset black; 
+}
+#caja14{
+    border-top: 10px outset black; 
+    border-bottom: 10px double rgb(192, 7, 7) ;
+    border-left: 10px solid rgb(89, 45, 3) ;
+    border-right: 10px dotted rgb(211, 151, 13);
+}
+#caja15{
+    font-family: Jost, sans-serif;
+    font-size: 1rem;
+  
+    padding: 1rem 2rem;
+    background: none;
+    color: #000;
+  
+    border-image-source: linear-gradient(indigo, purple, hotpink);
+    border-image-slice: 1 1 1 1;
+    border-image-width: 0.25rem;  
+}
+#caja16{
+    --timing: linear(0, 0.3, 0.75, 1);
+  
+    font-family: Jost, sans-serif;
+    font-size: 0.5rem;
+  
+    padding: 1rem 2rem;
+    background: none;
+    color: #000;
+  
+    border-image-source: conic-gradient(from var(--a), indigo, purple, hotpink);
+    border-image-slice: 1 1 1 1;
+    border-image-width: 0.25rem;
+  
+    animation: move 1s infinite var(--timing);
+  
+  
+  }
+  
+  @keyframes move {
+    from { --a: 0deg; }
+    to { --a: 360deg; }
+  }
+  
+  @property --a {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0deg;
+}
+
